@@ -1,0 +1,16 @@
+{
+  "framework": "HIPAA",
+  "version": "Security Rule (45 CFR 164.3xx)",
+  "controls": [
+    {"id": "164.308(a)(1)", "name": "Security management process / risk analysis", "objective": "Conduct an accurate risk analysis and manage risk", "priority": "critical", "effort_hours": 20, "evidence_examples": ["risk analysis", "risk management plan"]},
+    {"id": "164.308(a)(3)", "name": "Workforce access management", "objective": "Authorize and supervise workforce access to ePHI", "priority": "critical", "effort_hours": 16, "evidence_examples": ["access authorization records", "termination procedures"]},
+    {"id": "164.308(a)(4)", "name": "Information access management", "objective": "Policies for granting access to ePHI", "priority": "high", "effort_hours": 12, "evidence_examples": ["access control policy", "RBAC"]},
+    {"id": "164.308(a)(5)", "name": "Security awareness & training", "objective": "Security awareness and training program", "priority": "medium", "effort_hours": 6, "evidence_examples": ["training records"]},
+    {"id": "164.308(a)(6)", "name": "Security incident procedures", "objective": "Identify and respond to security incidents", "priority": "high", "effort_hours": 12, "evidence_examples": ["incident response plan", "incident log"]},
+    {"id": "164.308(a)(7)", "name": "Contingency plan", "objective": "Data backup, disaster recovery, emergency mode", "priority": "high", "effort_hours": 14, "evidence_examples": ["backup plan", "DR test"]},
+    {"id": "164.308(b)(1)", "name": "Business associate agreements", "objective": "Obtain satisfactory assurances from business associates", "priority": "critical", "effort_hours": 10, "evidence_examples": ["BAA inventory", "signed BAAs"]},
+    {"id": "164.312(a)(1)", "name": "Access control (technical)", "objective": "Unique user IDs, automatic logoff, encryption", "priority": "critical", "effort_hours": 16, "evidence_examples": ["unique ID config", "session timeout settings", "encryption settings"]},
+    {"id": "164.312(b)", "name": "Audit controls", "objective": "Record and examine activity in systems with ePHI", "priority": "high", "effort_hours": 12, "evidence_examples": ["audit log config", "EHR audit trails"]},
+    {"id": "164.312(e)(1)", "name": "Transmission security", "objective": "Protect ePHI transmitted over networks", "priority": "critical", "effort_hours": 10, "evidence_examples": ["TLS config", "VPN config"]}
+  ]
+}

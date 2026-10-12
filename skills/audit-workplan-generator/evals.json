@@ -1,0 +1,26 @@
+{
+  "skill_name": "audit-workplan-generator",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "SOC2-controls-spreadsheet",
+      "prompt": "I have a SOC 2 Type II audit coming in 4 months. I've uploaded my controls spreadsheet (38 controls across 11 control objectives). We're a SaaS company, 25 people. Most concerned about technical controls (MFA, encryption) and operational processes (change management, access reviews). Generate a comprehensive audit workplan that prioritizes these areas and gives us a day-by-day action plan.",
+      "expected_output": "Workplan JSON with phases, priority matrix showing critical controls first, task breakdown by week, evidence checklist in Excel, Q&A guide for SOC 2",
+      "files": ["example-soc2-controls.xlsx"]
+    },
+    {
+      "id": 2,
+      "eval_name": "natural-language-description",
+      "prompt": "Help me prepare for an ISO 27001 audit. Here's my situation: we're a fintech startup, 15 people. We have basic security policies but no formal change management process. Audit is in 3 months. I'm worried about access control evidence and lack of formal risk assessment. I don't have a spreadsheet of controls - can you generate a standard ISO 27001 control framework and build a workplan based on our startup context?",
+      "expected_output": "Recommended ISO 27001 control list for fintech, workplan adapted to startup size/budget, critical path highlighted, realistic timeline for 3-month prep, team assignments for small team",
+      "files": []
+    },
+    {
+      "id": 3,
+      "eval_name": "partial-info-clarification",
+      "prompt": "We need an audit workplan. SOC 2 Type I (snapshot in time). 60+ controls to document. Healthcare provider. Have 6 weeks. Budget is tight - want to know what's absolutely critical vs nice-to-have.",
+      "expected_output": "Workplan with clear CRITICAL tier controls (must do in 6 weeks), HIGH tier (important but could defer), MEDIUM tier (nice to have). Evidence requirements realistic for healthcare. Time estimates show feasibility. Suggests scope reduction or timeline extension if needed.",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "skill_name": "evidence-strength-mapper",
+  "evals": [
+    {"id": 1, "eval_name": "control-list-with-mixed-evidence", "prompt": "Here are 10 SOC 2 controls with the evidence I'm planning to collect. Tell me which evidence is strong vs weak and what I should collect instead.", "expected_output": "Strength report: weak %, controls with no strong evidence flagged as highest risk, and a concrete upgrade for each weak item.", "files": ["controls.json"]},
+    {"id": 2, "eval_name": "screenshot-heavy-review", "prompt": "My auditor wants screenshots of all my settings. Are screenshots good enough? Here's my list.", "expected_output": "Honest explanation that screenshots are the weakest evidence (point-in-time, cherry-pickable, can't show prevention) with system-of-record upgrades; does not soften the verdict.", "files": []},
+    {"id": 3, "eval_name": "ad-hoc-evidence-strings", "prompt": "Is 'we confirm via email that access was removed' acceptable evidence for access deprovisioning?", "expected_output": "Classifies as a manual claim (weak) and suggests a ticket/PR-with-approval or deprovisioning log instead.", "files": []}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "framework": "ISO 27001",
+  "version": "2022 Annex A",
+  "controls": [
+    {"id": "A.5.1", "name": "Policies for information security", "objective": "Define and approve an information security policy set", "priority": "high", "effort_hours": 8, "evidence_examples": ["approved ISMS policy", "review records"]},
+    {"id": "A.5.9", "name": "Inventory of assets", "objective": "Maintain an inventory of information and assets", "priority": "medium", "effort_hours": 10, "evidence_examples": ["asset register"]},
+    {"id": "A.5.15", "name": "Access control", "objective": "Establish access control based on business requirements", "priority": "critical", "effort_hours": 20, "evidence_examples": ["access control policy", "RBAC matrix"]},
+    {"id": "A.5.18", "name": "Access rights review", "objective": "Provision, review, and remove access rights", "priority": "critical", "effort_hours": 14, "evidence_examples": ["joiner/mover/leaver records", "access review"]},
+    {"id": "A.5.23", "name": "Cloud services security", "objective": "Manage information security in use of cloud services", "priority": "high", "effort_hours": 10, "evidence_examples": ["cloud config baseline", "shared-responsibility mapping"]},
+    {"id": "A.6.3", "name": "Security awareness & training", "objective": "Provide security awareness education", "priority": "medium", "effort_hours": 6, "evidence_examples": ["training completion records"]},
+    {"id": "A.8.8", "name": "Technical vulnerability management", "objective": "Manage technical vulnerabilities", "priority": "high", "effort_hours": 16, "evidence_examples": ["scan reports", "patch records"]},
+    {"id": "A.8.9", "name": "Configuration management", "objective": "Establish and maintain secure configurations", "priority": "high", "effort_hours": 12, "evidence_examples": ["hardening baselines", "IaC config"]},
+    {"id": "A.8.15", "name": "Logging", "objective": "Produce and protect logs of events", "priority": "high", "effort_hours": 12, "evidence_examples": ["logging config", "sample logs"]},
+    {"id": "A.8.24", "name": "Use of cryptography", "objective": "Define and implement cryptographic controls", "priority": "critical", "effort_hours": 12, "evidence_examples": ["crypto policy", "TLS and at-rest encryption evidence"]},
+    {"id": "A.5.24", "name": "Incident management planning", "objective": "Plan and prepare for incident management", "priority": "high", "effort_hours": 14, "evidence_examples": ["incident response plan"]},
+    {"id": "A.5.30", "name": "ICT readiness for continuity", "objective": "Plan ICT continuity and recovery", "priority": "medium", "effort_hours": 12, "evidence_examples": ["BCP/DR plan", "DR test results"]}
+  ]
+}

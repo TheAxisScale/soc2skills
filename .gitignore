@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Generated skill outputs (never commit real customer data)
+outputs/
+*.xlsx
+!skills/**/reference/**/*.xlsx
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

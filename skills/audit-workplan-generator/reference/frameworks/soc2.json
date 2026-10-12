@@ -1,0 +1,19 @@
+{
+  "framework": "SOC 2",
+  "version": "2017 TSC (rev. 2022)",
+  "controls": [
+    {"id": "CC1.1", "name": "Control environment & integrity", "objective": "Demonstrate commitment to integrity and ethical values", "priority": "high", "effort_hours": 8, "evidence_examples": ["code of conduct", "org chart", "board minutes"]},
+    {"id": "CC2.1", "name": "Communication of policies", "objective": "Internal communication of security objectives and responsibilities", "priority": "medium", "effort_hours": 6, "evidence_examples": ["published policies", "acknowledgement records"]},
+    {"id": "CC5.2", "name": "Change management", "objective": "Changes to infrastructure and software are authorized, tested, and approved", "priority": "critical", "effort_hours": 20, "evidence_examples": ["change tickets with approvals", "CI/CD config", "PR review records"]},
+    {"id": "CC6.1", "name": "Logical access controls", "objective": "Restrict logical access to authorized users", "priority": "critical", "effort_hours": 20, "evidence_examples": ["MFA configuration export", "SSO policy", "access control list"]},
+    {"id": "CC6.2", "name": "Access provisioning & deprovisioning", "objective": "Register and authorize new users; remove access on termination", "priority": "critical", "effort_hours": 16, "evidence_examples": ["onboarding tickets", "termination checklist", "access removal logs"]},
+    {"id": "CC6.3", "name": "Access reviews", "objective": "Periodically review user access rights", "priority": "high", "effort_hours": 12, "evidence_examples": ["quarterly access review records", "reviewer sign-off"]},
+    {"id": "CC6.6", "name": "Encryption in transit", "objective": "Protect data transmitted over public networks", "priority": "critical", "effort_hours": 10, "evidence_examples": ["TLS configuration", "SSL Labs report"]},
+    {"id": "CC6.7", "name": "Encryption at rest", "objective": "Protect data at rest", "priority": "high", "effort_hours": 10, "evidence_examples": ["database encryption settings", "KMS key policy"]},
+    {"id": "CC7.2", "name": "Security monitoring", "objective": "Monitor systems to detect anomalies and security events", "priority": "high", "effort_hours": 18, "evidence_examples": ["SIEM/log-alerting config", "sample alerts"]},
+    {"id": "CC7.3", "name": "Incident response", "objective": "Evaluate and respond to security incidents", "priority": "high", "effort_hours": 14, "evidence_examples": ["incident response plan", "post-incident reviews"]},
+    {"id": "CC8.1", "name": "Vulnerability management", "objective": "Identify and remediate vulnerabilities", "priority": "high", "effort_hours": 16, "evidence_examples": ["scan reports", "remediation tracker", "pentest report"]},
+    {"id": "A1.2", "name": "Availability / backups & DR", "objective": "Maintain backups and recovery capability", "priority": "medium", "effort_hours": 12, "evidence_examples": ["backup config", "DR test results"]},
+    {"id": "C1.1", "name": "Confidentiality handling", "objective": "Identify and protect confidential information", "priority": "medium", "effort_hours": 8, "evidence_examples": ["data classification policy", "retention schedule"]}
+  ]
+}

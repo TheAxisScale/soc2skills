@@ -1,0 +1,15 @@
+{
+  "source": "Axis GRC & Compliance Pain Research, 2026-10-11. Screenshot-weakness thesis: John Flack (GRC Engineering Club); Ann Wallace (Edera). Performative-GRC/self-authored thesis: Nirosh Jayaratnam.",
+  "types": [
+    {"type": "screenshot", "label": "Screenshot of a settings screen", "strength": "weak", "keywords": ["screenshot", "screen shot", "screengrab", "snip"], "why": "One setting, on one screen, at one moment, chosen by the auditee. Stale within hours, cherry-pickable, point-in-time not period, and it can't show prevention.", "upgrade_of": "system_export"},
+    {"type": "manual_claim", "label": "Manual assertion / email confirmation", "strength": "weak", "keywords": ["confirm", "verbal", "manually", "we attest", "email saying"], "why": "An assertion, not evidence. An auditor cannot reperform it.", "upgrade_of": "ticket_with_approval"},
+    {"type": "system_export", "label": "Configuration export from the system of record", "strength": "strong", "keywords": ["export", "configuration", "config", "settings"], "why": "Pulled from the system of record; reflects the actually-enforced state, not a staged view.", "upgrade_of": null},
+    {"type": "automated_log", "label": "Automated log / audit trail", "strength": "strong", "keywords": ["log", "audit trail", "siem", "alert", "monitoring"], "why": "A time-series record over the whole period; hard to cherry-pick a single moment.", "upgrade_of": null},
+    {"type": "api_pull", "label": "Programmatic API pull", "strength": "strong", "keywords": ["api"], "why": "Reproducible and covers all resources, not a sampled screen.", "upgrade_of": null},
+    {"type": "ticket_with_approval", "label": "Ticket / PR with approval", "strength": "strong", "keywords": ["ticket", "approval", "pull request", "pr review", "change request", "sign-off"], "why": "Shows the control operated with authorization and a reviewer, across many instances.", "upgrade_of": null},
+    {"type": "third_party_report", "label": "Independent or tool-generated report", "strength": "strong", "keywords": ["report", "scan", "pentest", "penetration", "dr test", "test results"], "why": "Independent or tool-generated; not authored by the auditee.", "upgrade_of": null},
+    {"type": "signed_record", "label": "Signed / dated record", "strength": "strong", "keywords": ["signed", "baa", "acknowledgement", "records", "record"], "why": "A dated, attributable record of a real event.", "upgrade_of": null},
+    {"type": "self_authored_doc", "label": "Self-authored document", "strength": "weak", "keywords": ["policy", "policies", "document", "plan", "procedure", "attestation", "spreadsheet", "classification", "schedule", "matrix", "chart", "minutes", "inventory", "register"], "why": "Proves a document exists, not that the control operated. Templates you didn't write and can't defend are the classic 'performative GRC' trap.", "upgrade_of": "automated_log"}
+  ],
+  "unclassified": {"type": "unclassified", "strength": "weak", "why": "Could not match a known evidence type. Treat as weak until you can tie it to a system of record.", "upgrade_to": "tie it to a system of record (export, log, ticket, or report)"}
+}
