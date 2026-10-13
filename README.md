@@ -15,6 +15,7 @@ No gatekeeping. No theater. Substance, not screenshots.
 |---|---|
 | [`audit-workplan-generator`](skills/audit-workplan-generator/) | Turns a control list (or a plain-English description of your audit) into a phased, risk-prioritized prep workplan — critical controls first, realistic effort estimates, and an honest feasibility read on your timeline. |
 | [`evidence-strength-mapper`](skills/evidence-strength-mapper/) | For each control, tells you what evidence proves it — and flags which evidence is **system-of-record (strong)** vs **screenshot (weak / stale / cherry-pickable)**, so you collect evidence that survives an audit. |
+| [`compliance-cost-estimator`](skills/compliance-cost-estimator/) | The **all-in** cost of a SOC 2 / ISO 27001 / HIPAA program — implementation/advisory + independent audit + the per-framework tax — plus the hidden-cost gap and the Year-2 renewal jump. Sourced; never invents a tool price. |
 
 ## Who it's for
 
@@ -37,9 +38,13 @@ python skills/audit-workplan-generator/scripts/workplan.py \
 # Which of your evidence is strong vs. a weak screenshot — and what to collect instead
 python skills/evidence-strength-mapper/scripts/evidence_mapper.py \
   --evidence "Screenshot of MFA settings; SIEM audit log; access control policy"
+
+# The all-in cost of your program (implementation + audit + per-framework tax)
+python skills/compliance-cost-estimator/scripts/cost_estimator.py \
+  --frameworks soc2,iso27001
 ```
 
-Run the tests: `pip install pytest && pytest skills/ -q` (26 tests).
+Run the tests: `pip install pytest && pytest skills/ -q` (32 tests).
 
 ## License
 

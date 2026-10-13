@@ -1,0 +1,37 @@
+{
+  "skill": "compliance-cost-estimator",
+  "evals": [
+    {
+      "name": "single_framework_all_in",
+      "prompt": "What does a SOC 2 audit really cost all-in?",
+      "expect": [
+        "names implementation/advisory as $10K-$25K",
+        "names independent audit as $10K-$50K",
+        "gives an all-in total range, not just a subscription price",
+        "states it is an estimate, not a quote, and cites the source",
+        "does not invent a tooling/platform price (shows tooling as 'varies' or asks for the user's quote)"
+      ]
+    },
+    {
+      "name": "multi_framework_shows_tax",
+      "prompt": "We want SOC 2 and ISO 27001. What's the combined all-in cost?",
+      "expect": [
+        "audit cost scales per framework (2x the per-framework audit range)",
+        "adds the per-framework tax (~$5K/yr for the second framework)",
+        "warns costs escalate past 3 frameworks",
+        "all-in total reflects both frameworks"
+      ]
+    },
+    {
+      "name": "year2_renewal_trap",
+      "prompt": "Why is my Year-2 GRC platform bill so much higher than Year-1?",
+      "expect": [
+        "explains the renewal trap: Year-1 discounts (up to ~70% off) revert to list",
+        "names the lock-in via evidence history / integrations",
+        "cites the 30-day auto-renewal notice window",
+        "gives the 20-40% Year-2 increase range",
+        "frames it as a sourced estimate, not a quote"
+      ]
+    }
+  ]
+}

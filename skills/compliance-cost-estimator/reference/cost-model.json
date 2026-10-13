@@ -1,0 +1,12 @@
+{
+  "source": "Axis GRC & Compliance Pain Research, 2026-10-11 (adversarially verified)",
+  "currency": "USD",
+  "implementation_advisory_usd": [10000, 25000],
+  "independent_audit_per_framework_usd": [10000, 50000],
+  "per_framework_tax_usd": 5000,
+  "year2_increase_pct": [20, 40],
+  "underestimate_pct": [30, 50],
+  "tooling_note": "Platform/tooling price varies widely and is quote-specific; supply your own figure. We do not invent a tool price.",
+  "renewal_trap_note": "Year-1 startup discounts (up to ~70% off) can revert to list once you're locked in via evidence history/integrations. Watch the 30-day auto-renewal notice window; budget a 20-40% Year-2 increase.",
+  "per_framework_tax_note": "Each framework beyond the first can add ~$5K/yr on major platforms; costs escalate past 3 frameworks."
+}
